@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.HomeActivity">
+    <com.bw.movie.view.activity.CustomScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/sh_view"
+        ></com.bw.movie.view.activity.CustomScrollViewPager>
+    <LinearLayout
+        android:background="#141931"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/lay_one"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/image_movei_dj"
+                android:background="@drawable/movies"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:id="@+id/lin_movei"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/bagselect"
+                android:layout_width="108dp"
+                android:layout_height="36dp">
+
+                <ImageView
+                    android:background="@drawable/movie"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#e8185e"
+                    android:textSize="14sp"
+                    android:text="电影"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_two"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:id="@+id/image_cinem_dj"
+                android:background="@drawable/cinemas"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lin_cinem"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/bagselect"
+                android:layout_width="108dp"
+                android:layout_height="36dp">
+
+                <ImageView
+                    android:background="@drawable/cinema"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#e8185e"
+                    android:textSize="14sp"
+                    android:text="影院"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_swe"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image_myy_dj"
+                android:background="@drawable/mys"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/lin_myy"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/bagselect"
+                android:layout_width="108dp"
+                android:layout_height="36dp">
+
+                <ImageView
+                    android:background="@drawable/my"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#e8185e"
+                    android:textSize="14sp"
+                    android:text="我的"
+                    android:layout_width="28dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

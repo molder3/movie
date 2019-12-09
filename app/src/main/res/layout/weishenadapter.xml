@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                fresco:roundedCornerRadius="90dp"
+                android:id="@+id/film_img"></com.facebook.drawee.view.SimpleDraweeView>
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="冷月女神"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/film_name"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="☆ ☆ ☆ ☆ ☆"
+                        android:background="#141931"
+                        android:textColor="#fff"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9分"
+                        android:id="@+id/film_xing"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="04-24 09:15"
+                        android:textColor="#fff"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="60dp"
+                        android:id="@+id/film_time"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#fff"
+                    android:text="请输入评论"
+                    android:id="@+id/film_pl"
+                    />
+
+             <com.facebook.drawee.view.SimpleDraweeView
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="20dp"></com.facebook.drawee.view.SimpleDraweeView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

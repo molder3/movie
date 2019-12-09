@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#141931"
+    tools:context=".view.activity.FeedbackActivity">
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="26dp">
+
+        <ImageView
+            android:id="@+id/details_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/left_shape" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="意见反馈"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+     
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#1C2243"
+        android:textColor="#fff"
+        android:id="@+id/edti_txt"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/erxds"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#E8185E"
+            android:text="提交"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tijao"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+
+        android:id="@+id/lyasod"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gggg"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交成功"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

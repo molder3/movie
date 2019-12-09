@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#141931"
+    tools:context=".view.activity.MineActivity">
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="26dp">
+
+        <ImageView
+            android:id="@+id/details_back"
+            android:layout_width="16sp"
+            android:layout_height="16sp"
+            android:src="@mipmap/left_shape" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#1c2243"
+        android:layout_width="312dp"
+        android:layout_height="178dp">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="头        像"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                app:actualImageScaleType="centerInside"
+                app:roundAsCircle="true"
+                android:id="@+id/textimag"
+                android:layout_width="36dp"
+                android:layout_height="36dp" ></com.facebook.drawee.view.SimpleDraweeView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="呢        称"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_my_name"
+                android:textSize="12sp"
+                android:textColor="#deaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="性        别"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_my_xing"
+                android:textSize="12sp"
+                android:textColor="#deaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="出生日期"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_my_data"
+                android:textSize="12sp"
+                android:textColor="#deaaaaaa"
+                android:text="1997-3-10"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#1c2243"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="312dp"
+        android:layout_height="88dp">
+
+        <LinearLayout
+            android:id="@+id/liner_phone"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="312dp"
+            android:layout_height="54dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="手  机  号"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:id="@+id/text_my_phone"
+                android:textSize="12sp"
+                android:textColor="#deaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/liner_phone_hl"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="312dp"
+            android:layout_height="54dp">
+            <EditText
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:textColorHint="#fff"
+                android:hint="请输入手机号"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/edit_text_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/but_versi"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="#e8185e"
+                android:text="确认"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="312dp"
+            android:layout_height="54dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:text="邮        箱"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:id="@+id/text_my_email"
+                android:textSize="12sp"
+                android:textColor="#deaaaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+        <Button
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="拍摄"
+            android:id="@+id/but_shoot"
+            android:background="#1c2243"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="从手机相册选择"
+            android:id="@+id/but_photo"
+            android:background="#1c2243"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141931"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pj_iv"
+            android:layout_marginLeft="30dp"
+            fresco:roundedCornerRadius="60dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/pj_iv"
+            android:text="6666"
+            android:id="@+id/pj_tv"
+            android:textColor="#fff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6666"
+            android:textColor="#fff"
+            android:id="@+id/pj_time"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pj_iv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="6666"
+            android:id="@+id/movie_evaluate"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/movie_evaluate"
+            android:src="@mipmap/dianzan_1"
+            android:id="@+id/evaluate_dz"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/movie_evaluate"
+            android:src="@mipmap/dianzan_2"
+            android:visibility="invisible"
+            android:id="@+id/evaluate_dz1"
+            />
+
+        <TextView
+            android:id="@+id/pj_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pj_iv"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:text="6666"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</RelativeLayout>

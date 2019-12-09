@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#141931"
+    tools:context=".view.activity.My_MovieActivity">
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="26dp">
+
+        <ImageView
+            android:id="@+id/details_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/left_shape" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="我的电影票"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="扫款取码"
+        android:id="@+id/text_movie"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/img_sipp"></com.facebook.drawee.view.SimpleDraweeView>
+    <Button
+        android:id="@+id/text_but"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="#E8185E"/>
+</LinearLayout>

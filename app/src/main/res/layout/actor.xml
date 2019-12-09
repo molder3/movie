@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        android:id="@+id/actor_img"
+        android:layout_marginTop="4dp"
+         android:scaleType="fitXY"
+        />
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:text="购票"
+        android:textColor="#fff"
+         android:gravity="center"
+        android:id="@+id/actor_acotr"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="20dp"
+        android:text="购票"
+        android:textColor="#9B9B9A"
+        android:gravity="center"
+        android:id="@+id/actor_role"
+        android:layout_marginTop="2dp"
+        />
+    
+</LinearLayout>

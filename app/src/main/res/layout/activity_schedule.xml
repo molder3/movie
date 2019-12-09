@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#141931"
+    tools:context=".view.activity.ScheduleActivity">
+    <RelativeLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="26dp">
+
+        <ImageView
+            android:id="@+id/details_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/left_shape" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="电影排期"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+  <!--  <android.support.design.widget.TabLayout
+        app:tabSelectedTextColor="#F7D6D6"
+        app:tabMode="scrollable"
+        android:id="@+id/tab_lay"
+        app:tabTextColor="#fff"
+        android:background="#1c2243"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+    </android.support.design.widget.TabLayout>-->
+        <com.google.android.material.tabs.TabLayout
+            app:tabSelectedTextColor="#F7D6D6"
+            app:tabMode="scrollable"
+            android:id="@+id/tab_lay"
+            app:tabTextColor="#fff"
+            android:background="#1c2243"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"></com.google.android.material.tabs.TabLayout>
+   <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_margin="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>-->
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
